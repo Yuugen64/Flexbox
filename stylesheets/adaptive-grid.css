@@ -1,0 +1,167 @@
+/*========== Main Layouts ==========*/
+.main-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: yellow;
+    overflow: hidden;
+}
+.display-bg {
+    display: flex;
+    height: 100%; /*prev 100%*/
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #292b38;
+}
+.status-left {
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    height: 90%;
+    background-color: #00b3a4;
+    gap: 10px;
+}
+.status-right {
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    height: 90%;
+    background-color: #00b3a4;
+    gap: 10px;
+}
+.text-box-bg {
+    display: flex;
+    max-height: 30%; /*prev 30%*/
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #454b60;
+}
+.control-bg {
+    display: flex;
+    height: 20%; /*prev 20%*/
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px 0px 20px 0px;
+    background-color: #376e8d;
+}
+/*========== ========== ==========*/
+
+
+/*========== Controls ==========*/
+.control-bg button {
+    font-size: 3rem;
+    padding: 40px 50px 40px 50px;
+    border: none;
+    border-radius: 10px;
+}
+/*========== ========== ==========*/
+
+
+/*========== Feedback ==========*/
+.status {
+    height: 100%;
+    width: auto;
+    aspect-ratio: 1/1;
+    background-color: #00a4a8;
+    border-radius: 10px;
+    background-image: url("../assets/ocean.gif");
+}
+.text-box {
+    height: 90%;
+    width: 90%;
+    background-color: #585f7a;
+    border-radius: 15px;
+    
+}
+#text-output{
+    max-height: 100%;
+    
+    background-color: #00baa0;
+    font-size: 3rem;
+}
+/*========== ========== ==========*/
+
+/*========== Sub-Display ==========*/
+.display-theatre {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    width: 70%;
+    justify-content: center; /*centers horizontally in the row*/
+    align-items: center; /*centers vertically*/
+    background-color: #434556;
+}
+.display{
+    display: flex;
+    flex-direction: row;
+    width: min(512px, 100%);
+    height: min(100%, 512px);
+    justify-content: center; /*centers horizontally in the row*/
+    background-color: lightsalmon;
+}
+#display-content{
+    height: 100%;
+    width: auto;
+    aspect-ratio: 1/1;
+    background-color: #5b5e73;
+    background-image: url("../assets/flower_512x512.svg");
+    background-image: url("../assets/ocean.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*
+.display{
+    display: flex;
+    flex-direction: column;
+    width: min(512px, 100%);
+    height: min(100%, 512px);
+    background-color: lightsalmon;
+}
+#display-content{
+    height: 100%;
+    width: auto;
+    padding-left: 50%;
+    background-color: #5b5e73;
+    background-image: url("../assets/flower_512x512.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}*/
+.filler{
+    height: 100%;
+    width: 100%;
+    background-color: #0a859f;
+}
+/*========== ========== ==========*/
+
+
+/* ===== Testing Colors ===== */
+.tEsTiNgDoNOTUse {
+    color: #434556; /*display BG*/
+    color: #454b60; /*display "theatre"*/
+    color: #455169; /*display*/
+    color: #445873;
+    color: #425f7c; /*content BG*/
+    color: #3d6685;
+    color: #376e8d; /*controls BG*/
+    color: #2e7594;
+    color: #217d9a;
+    color: #0a859f; /*Base Color*/
+    color: #008da3;
+    color: #0095a6;
+    color: #009ca8;
+    color: #00a4a8;
+    color: #00aca6;
+    color: #00b3a4;
+    color: #00baa0;
+    color: #00c19c;
+    color: #00c896;
+    color: #20cf8f;
+}

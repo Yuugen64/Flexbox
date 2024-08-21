@@ -1,0 +1,18 @@
+A simple text log for keeping track of the app's changes, bugs, and plans.
+===== ========== =====
+Sage
+===== ========== =====
+
+===== Features =====
+[] Mobile Responsiveness
+[] Interface Buttons
+[] Text Buffer
+[] Mobile responsiveness
+[] Test Language
+[] Basic Game Loop
+
+
+
+
+===== == Bugs == =====
+1.

@@ -1,0 +1,268 @@
+.main-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: yellow;
+    overflow: hidden;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: .25fr 1fr 1fr 1fr 1fr 1fr .25fr;
+    gap: 15px;
+    background-color: lightseagreen;
+
+    width: 100%;
+    height: 100%;
+}
+
+/*Not in use atm*/
+.display-bg {
+    display: none;
+    grid-column: 1 / span 3;
+    grid-row: 2 / span 3;
+    background-color: #434556;
+}
+.display {
+    grid-column: 1 / span 3;
+    grid-row: 2 / span 3;
+    background-color: #454b60;
+    
+}
+.content-bg {
+    grid-column: 1 / span 3;
+    grid-row: 2 / span 3;
+    padding: 5% 0 5% 0; /*To get the nice "floating" content effect*/
+
+    background-color: #425f7c;
+
+    /*display: grid; /*used for the "justify-self" below*/
+    place-items: center;
+}
+.content {
+    width: 80%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    background-color: yellow;
+}   
+
+
+
+
+/*===== ========== Media Queries ========== =====*/
+/* EXTRA small devices (phones, 600px and down) 
+@media only screen and (max-width: 600px) {}*/
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (min-width: 300px) and (max-width: 600px) and (orientation: portrait) {
+    .main-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: .25fr 1fr 1fr 1fr 1fr 1fr .25fr;
+        background-color: lightseagreen;
+    }
+    .display {
+        display: none;
+        grid-column: 1 / span 3;
+        grid-row: 2 / span 3;
+        background-color: #454b60;
+    }
+    .content-bg {
+        grid-column: 1 / span 3;
+        grid-row: 2 / span 3;
+        padding: 5% 0 5% 0; /*To get the nice "floating" content effect*/
+    
+        background-color: #425f7c;
+    
+        /*display: grid; /*used for the "justify-self" below*/
+        place-items: center;
+    }
+    .content {
+        width: 50%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        background-color: blue;
+        /*justify-self: center;*/
+    }
+}
+
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (min-width: 601px) and (max-width: 768px) {
+    .main-grid {
+        grid-template-columns: .25fr 1fr 1fr 1fr 1fr 1fr .25fr;
+        grid-template-rows: .25fr 1fr 1fr 1fr 1fr 1fr .25fr;
+        background-color: lightblue;
+    }
+    .display {
+        grid-column: 2 / span 5;
+        grid-row: 2 / span 3;
+        background-color: #454b60;
+    }
+    .content-bg {
+        grid-column: 3 / span 3;
+        grid-row: 2 / span 3;
+        padding: 5% 0 5% 0; /*To get the nice "floating" content effect*/
+    
+        background-color: #425f7c;
+    
+        /*display: grid; /*used for the "justify-self" below*/
+        place-items: center;
+    }
+    .content {
+        width: auto;
+        height: 100%;
+        aspect-ratio: 1 / 1;
+        background-color: red;
+        /*justify-self: center;*/
+    }
+}
+
+
+
+/* Large devices (HD laptops/desktops, 992px and up) */
+@media screen and (min-width: 769px) and (max-width: 1285px) {
+    .main-grid {
+        grid-template-columns: .25fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr .25fr;
+        grid-template-rows: .25fr 1fr 1fr 1fr 1fr 1fr 1.2fr .8fr .25fr;
+        background-color: lightcoral;
+    }
+    
+    /* Not in use atm */
+    .display-bg {
+        display: none;
+        grid-column: 2 / span 7;
+        grid-row: 2 / span 5;
+        background-color: #434556;
+    }
+    .display {
+        grid-column: 2 / span 7;
+        grid-row: 2 / span 5;
+        background-color: #454b60;
+        
+    }
+    .content-bg {
+        grid-column: 3 / span 5;
+        grid-row: 2 / span 5;
+        padding: 5% 0 5% 0; /*To get the nice "floating" content effect*/
+    
+        background-color: #425f7c;
+    
+        display: grid; /*used for the "justify-self" below*/
+    }
+    .content {
+        width: auto;
+        height: 100%;
+        aspect-ratio: 1 / 1;
+        background-color: yellowgreen;
+        justify-self: center;
+    }
+}
+
+
+
+/* Extra large devices (FullHD laptops and desktops, 1200px and up) */
+@media screen and (min-width: 1286px) and (max-width: 1920px) {
+    .main-grid {
+        grid-template-columns: .25fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr .25fr;
+        grid-template-rows: .25fr 1fr 1fr 1fr 1fr 1fr 1.2fr .8fr .25fr;
+        background-color: lightseagreen;
+    }
+    
+    .display-bg {
+        grid-column: 2 / span 9;
+        grid-row: 2 / span 5;
+        background-color: #434556;
+    }
+    .display {
+        grid-column: 3 / span 7;
+        grid-row: 2 / span 5;
+        background-color: #454b60;
+        
+    }
+    .content-bg {
+        grid-column: 4 / span 5;
+        grid-row: 2 / span 5;
+        padding: 5% 0 5% 0; /*To get the nice "floating" content effect*/
+    
+        background-color: #425f7c;
+    
+        display: grid; /*used for the "justify-self" below*/
+    }
+    .content {
+        width: auto;
+        height: 100%;
+        aspect-ratio: 1 / 1;
+        background-color: green;
+        justify-self: center;
+    }
+}
+
+
+
+
+/* ===== Testing Colors ===== */
+.tEsTiNgDoNOTUse {
+    color: #434556; /*display BG*/
+    color: #454b60; /*display*/
+    color: #455169;
+    color: #445873;
+    color: #425f7c; /*content BG*/
+    color: #3d6685;
+    color: #376e8d;
+    color: #2e7594;
+    color: #217d9a;
+    color: #0a859f; /*Base Color*/
+    color: #008da3;
+    color: #0095a6;
+    color: #009ca8;
+    color: #00a4a8;
+    color: #00aca6;
+    color: #00b3a4;
+    color: #00baa0;
+    color: #00c19c;
+    color: #00c896;
+    color: #20cf8f;
+}
+
+
+
+/* Large screens FIRST ----------- */
+/*some CSS*/
+
+/* Desktops and laptops ----------- */
+@media only screen and (max-width : 1824px) {}
+
+/* iPads (landscape) ----------- */
+@media only screen and (max-width : 1224px) {}
+
+/* iPads (portrait) ----------- */
+@media only screen and (max-width : 1024px) {}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (max-width : 768px) {}
+
+/* Big smartphones (portrait) (ie: Galaxy 3 has 360)*/
+@media only screen and (max-width : 640px) {}
+
+/* Smartphones (portrait) (ie: Galaxy 1) */
+@media only screen and (max-width : 321px) {}
+
+/*OR*/
+
+/* Smartphones (portrait) ----------- */
+
+/* Ipad2 (portrait) ----------- */
+@media only screen and (min-width : 768px){}
+
+/* Ipad2 (paysage) ----------- */
+@media only screen and (min-width : 1024px){}
+
+/* Ordi (Petit) ----------- */
+@media only screen and (min-width : 1224px){}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1824px){}

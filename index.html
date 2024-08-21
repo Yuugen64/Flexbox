@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sage</title>
+
+    <!--Mobile Responsiveness-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Font Embed-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+
+    <!--External Stylesheet(s)-->
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/adaptive-grid.css">
+
+    <!--External JS-->
+    <script type="module" src="./scripts/app.js"></script>
+    <script type="module" src="./scripts/text.js"></script>
+
+</head>
+<body>
+    
+    <!--The Full-Screencontainer: flex-column-->
+    <div class="main-container">
+
+        <!--The background color for the display area-->
+        <div class="display-bg">
+            <div class="status-left">
+                <div class="filler"></div>
+                <div class="filler"></div>
+                <div class="filler"></div>
+            </div>
+
+            <!--The actual display-->
+            <div class="display-theatre">
+                <div class="display">
+                    <div id="display-content">
+                    </div>
+                </div>
+            </div>
+
+            <div class="status-left">
+                <div class="filler"></div>
+                <div class="filler"></div>
+                <div class="filler"></div>
+            </div>
+        </div>
+
+        <!--The [Text Box Area]-->
+        <div class="text-box-bg">
+            <div class="text-box">
+                <p id="text-output">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas laboriosam ex molestiae non perferendis in, similique modi odit accusamus dolores voluptate aut repellendus consequuntur velit inventore, quas enim explicabo voluptatibus. Delectus tenetur magni nam unde, provident nobis quidem aspernatur libero fugit culpa laborum quo ratione illum error alias pariatur porro.
+                </p>
+            </div>
+        </div>
+
+        <!--The CONTROLS!-->
+        <div class="control-bg">
+            <button id="green">Y</button>
+            <div class="status">
+
+            </div>
+            <button class="red">N</button>
+        </div>
+        
+
+    </div>
+
+    <!--Secure the footer in the bottom #vh of the page
+    <footer>
+    </footer>-->
+
+    
+
+</body>
+</html>
